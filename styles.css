@@ -2,12 +2,166 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none
+    list-style: none;
+    text-decoration: none;
 }
 
-
+:root{
+    --color-primary: #16194f;
+    --color-secondary: #F44E77;
+    --color-neutral-1: #CAC7FF;
+    --color-neutral-2: #F2F6FF;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-grey-1: #B4B2C5;
+    --font-size: 18px;
+    --trans: all .4s ease-in-out;
+}
 
 body{
-    background-color: white;
     font-family: 'Nunito', sans-serif;
+    font-size: var(--font-size);
+    color: var(color-grey-1);
+}
+
+a{
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+.navigation{
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.logo img{
+    width: 50px;
+    opacity: .7;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    margin: 0 2rem;
+    position: relative;
+}
+
+.nav-item a{
+    color: var(--color-grey-1);
+    font-weight: 600;
+    padding: 1rem;
+    transition: var(--trans);
+}
+
+.nav-item a::before{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-primary);
+    visibility: hidden;
+    transform: scale(0);
+    transform: all .3s ease-in-out;
+    opacity: .7;
+}
+
+.nav-item a:hover::before{
+    visibility: visible;
+    transform: scale(1);
+}
+
+.nav-item a:hover{
+    color: var(--color-primary);
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons .icon{
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.icons .icon i{
+    font-size: 1.7rem;
+    color: var(--color-primary);
+}
+
+.header{
+    min-height: 90vh;
+
+}
+
+.header-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 18rem;
+    margin-top: 8rem;
+    grid-gap: 2rem;
+}
+
+.left-header{
+    padding-top: 5rem;
+}
+
+.h-main{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primarycolor);
+    margin-bottom: 1rem;
+}
+
+.h-main span{
+    color: var(--color-secondary);
+}
+
+.left-header p{
+    padding: 2rem 0;
+    line-height: 1.9rem;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: .7rem 2.2rem;
+    border-radius: 7px;
+    transition: var(--trans);
+}
+
+.btn:hover{
+    background-color: var(--color-secondary);
+    transform: translate(0,-5px);
+}
+
+.right-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.shape{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-secondary);
+    z-index: -1;
+    transform: skew(-20deg);
 }
