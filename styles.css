@@ -164,4 +164,9 @@ a{
     background-color: var(--color-secondary);
     z-index: -1;
     transform: skew(-20deg);
+    transition: var(--trans);
+}
+
+.right-header:hover .shape{
+    transform: skew(0);
 }
