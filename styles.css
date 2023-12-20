@@ -170,3 +170,130 @@ a{
 .right-header:hover .shape{
     transform: skew(0);
 }
+
+/*About*/
+.main-title{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    transform: var(--trans);
+    cursor: default;
+
+}
+
+.main-title:hover h2{
+    transform: skew(-20deg);
+    transition: var(--trans);
+}
+
+.main-title p{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    transition: var(--trans);
+    cursor: default;
+}
+
+.main-title:hover p{
+    transform: skew(-20deg);
+    transition: var(--trans);
+}
+
+.service-skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding-top: 3rem;
+}
+
+.skill-title{
+    font-size: 2rem;
+    color: var(--color-primary);
+    padding-bottom: 1rem;
+}
+
+span{
+    color: var(--color-secondary);
+}
+
+.skills-con{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+}
+
+.skill-item{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.left-skill-sect img{
+    width: 7opx;
+}
+
+.right-skill-sect{
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.progress-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 100%;
+    height: .6rem;
+    background-color: var(--color-neutral-1);
+    border-radius: 16px;
+    position: relative;
+}
+
+.progress{
+    height: 100%;
+    background-color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 16px;
+}
+
+.css{
+    width: 80%;
+}
+
+.ad{
+    width: 70%;
+}
+
+.gh{
+    width: 90%;
+}
+
+.pyt{
+    width: 70%;
+}
+
+.js{
+    width: 60%;
+}
+
+.lin{
+    width: 50%;
+}
+/*utilities*/
+.u-pad-3{
+    padding: 10rem 18rem;
+}
+
