@@ -287,11 +287,47 @@ span{
 
 .js{
     width: 60%;
+    background-color: green;
 }
 
 .lin{
     width: 50%;
 }
+
+.portfolios{
+    display: grid;
+    height: 98vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 3rem;
+    padding-top: 3rem;
+}
+
+.portfolio{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .image{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    border-radius: 16px;
+}
+
+.portfolio .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.p-main{
+   grid-column: span 2;
+   grid-row: span 2; 
+}
+
 /*utilities*/
 .u-pad-3{
     padding: 10rem 18rem;
