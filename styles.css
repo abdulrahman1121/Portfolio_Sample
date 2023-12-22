@@ -441,9 +441,57 @@ span{
     padding-top: .4rem;
 }
 
+/*Contacts*/
+.section-contact{
+    background-color: var(--color-neutral-2);
+    position: relative;
+}
+.section-contact .navigation{
+    padding: initial;
+}
 
+.contact-info{
+    text-align: center;
+}
 
+.contact-info h4{
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
 
+.email{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email i{
+    margin: 0 1rem;
+    font-size: 3rem;
+    opacity: 0.8;
+    color: var(--color-secondary);
+}
+
+.email p{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Footer*/
+
+footer{
+    padding: 10rem 18rem;
+}
+
+footer p{
+    text-align: center;
+    color: var(--color-primary);
+}
+
+footer span{
+    cursor: pointer;
+}
 /*utilities*/
 .u-pad-3{
     padding: 10rem 18rem;
