@@ -328,6 +328,49 @@ span{
    grid-row: span 2; 
 }
 
+.image-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%) scaleX(0);
+    background-color: var(--color-primary);
+    opacity: 1;
+    transition: var(--trans);
+    border-radius: 16px;
+}
+
+.portfolio .image:hover .image-overlay{
+    transform: translate(-50%, -50%) scaleX(1);
+}
+
+.portfolio-icons{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 290px) rotate(270deg);
+    transform: var(--trans);
+    opacity: 0;
+}
+
+.portfolio-icons i{
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: var(--color-neutral-2);
+}
+
+.portfolio-icons i:hover{
+    color: var(--color-secondary);
+}
+.portfolio .image:hover .portfolio-icons{
+    transform: translate(-50%, -50%) rotate(0);
+    opacity: 1;
+
+}
+
+
 /*utilities*/
 .u-pad-3{
     padding: 10rem 18rem;
