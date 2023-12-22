@@ -294,6 +294,8 @@ span{
     width: 50%;
 }
 
+
+
 .portfolios{
     display: grid;
     height: 98vh;
@@ -369,6 +371,77 @@ span{
     opacity: 1;
 
 }
+
+.overlay{
+    position: absolute;
+    left: 1oopx;
+    z-index: -1;
+    top: 16.3rem;
+}
+
+.overlay img{
+    width: 200px;
+}
+
+/*Services*/
+
+.services-con{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
+    grid-gap: 2rem;
+    padding-top: 3rem;
+}
+
+.services{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .service-image{
+    padding: 1rem;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed #f7f7f7;
+    transform: var(--trans);
+    border-radius: 10px;
+}
+
+.services i{
+    font-size: 5rem;
+    margin: 1rem;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #16194f86;
+    transform: var(--trans);
+}
+
+.services .service-image:hover{
+    border: 3px dashed var(--color-primary);
+}
+
+.services .service-image:hover i{
+    color: #16194f;
+    cursor: pointer;
+}
+
+.services h4{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--color-primary);
+}
+
+.services p{
+    padding-top: .4rem;
+}
+
+
 
 
 /*utilities*/
